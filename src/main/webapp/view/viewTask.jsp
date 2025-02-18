@@ -30,6 +30,7 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<h2><a href="/">${logout}</a></h2>
 	</div>
 </body>
 </html>

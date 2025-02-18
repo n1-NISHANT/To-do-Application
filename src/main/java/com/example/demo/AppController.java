@@ -58,8 +58,12 @@ public class AppController {
 			return "login";
 		}
 	}
+	//@PostMapping("/{UserEntityId}/task")
 	@PostMapping("/task")
-	public String getTask(UserTask utask ,Model model) {
+	public String getTask(UserTask utask,Model model) {
+		
+		// UserEntity ent  =  repo.findById(UserEntityId);
+		  // ent.setUEntity();
 		
 		UserTaskEntity uEntity = new UserTaskEntity();
 		BeanUtils.copyProperties(utask, uEntity);
@@ -67,6 +71,7 @@ public class AppController {
 		erepo.save(uEntity);
 		
 		model.addAttribute("msg", "Task Save...");
+		model.addAttribute("viewtask", "View Task");
 		
 		return "task";
 	}
@@ -99,7 +104,8 @@ public class AppController {
 		   List<UserTaskEntity> usertask =  erepo.findAll();
 		   
 		   model.addAttribute("user", usertask);
-		
+		   model.addAttribute("logout", "Logout");
+		   
 		return "viewTask";
 	}
 	
