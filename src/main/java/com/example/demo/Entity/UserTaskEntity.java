@@ -61,7 +61,6 @@ public class UserTaskEntity {
 		return "UserTaskEntity [taskName=" + taskName + ", date=" + date + ", time=" + time + ", uEntity=" + uEntity
 				+ "]";
 	}
-
 	public Integer getTaskId() {
 		return taskId;
 	}
