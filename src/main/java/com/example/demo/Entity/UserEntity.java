@@ -1,7 +1,6 @@
 package com.example.demo.Entity;
 
 import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -49,7 +48,6 @@ public class UserEntity {
 	public void setUid(Integer uid) {
 		this.uid = uid;
 	}
-	
 	public String getName() {
 		return name;
 	}
