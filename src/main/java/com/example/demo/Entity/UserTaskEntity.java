@@ -55,7 +55,6 @@ public class UserTaskEntity {
 	public void setTime(String time) {
 		this.time = time;
 	}
-
 	@Override
 	public String toString() {
 		return "UserTaskEntity [taskName=" + taskName + ", date=" + date + ", time=" + time + ", uEntity=" + uEntity
@@ -64,7 +63,6 @@ public class UserTaskEntity {
 	public Integer getTaskId() {
 		return taskId;
 	}
-
 	public void setTaskId(Integer taskId) {
 		this.taskId = taskId;
 	}
