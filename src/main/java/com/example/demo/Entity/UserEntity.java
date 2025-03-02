@@ -43,7 +43,6 @@ public class UserEntity {
 	public Integer getUid() {
 		return uid;
 	}
-	
 	//---
 	public void setUid(Integer uid) {
 		this.uid = uid;
